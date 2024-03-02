@@ -1,0 +1,496 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Gestor de Opiniones",
+    "dateExported": "2024-03-02T17:23:07.455Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "88dc7a55-5ba9-4ede-99d8-f552a00ff7fa",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-02T04:56:35.029Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4add4f25-a5f5-4df6-8037-671cd1be1e54",
+            "name": "comment",
+            "containerId": "",
+            "created": "2024-03-02T04:56:35.030Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "61eb413f-3132-4f7a-806e-070878ff0c35",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-03-02T04:56:35.031Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "b44bfa39-9c22-41f5-baa6-34403f512ba6",
+            "name": "Post",
+            "containerId": "",
+            "created": "2024-03-02T04:56:35.032Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "14598371-a8f6-4da1-8fb4-6e3c6e7b2d23",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "88dc7a55-5ba9-4ede-99d8-f552a00ff7fa",
+            "name": "register",
+            "url": "user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T04:56:35.029Z",
+            "modified": "2024-03-02T05:03:00.498Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Eduardo"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Aguilar"
+                    },
+                    {
+                        "name": "username",
+                        "value": "gato"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    },
+                    {
+                        "name": "email",
+                        "value": "gatopro@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a155937d-6118-4c68-89c3-ab4d114fd334",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "88dc7a55-5ba9-4ede-99d8-f552a00ff7fa",
+            "name": "login",
+            "url": "user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-02T04:56:35.030Z",
+            "modified": "2024-03-02T05:17:13.412Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "gato"
+                    },
+                    {
+                        "name": "password",
+                        "value": "11111"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "668598f0-b20e-48d1-aac6-a3547bbe0cba",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "88dc7a55-5ba9-4ede-99d8-f552a00ff7fa",
+            "name": "updateUser",
+            "url": "user/updateUser",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-02T04:56:35.031Z",
+            "modified": "2024-03-02T05:09:58.984Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjE1MiwiZXhwIjoxNzA5MzY2OTUyfQ.pX9XLdFcLk4ckRqny515hFJgr6SZ8y92-wLXDmljtI8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "Bunny"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0b7801d9-36ef-44f1-b24c-2cee64f211fd",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "61eb413f-3132-4f7a-806e-070878ff0c35",
+            "name": "addCateogory",
+            "url": "category/addCategory",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-02T04:56:35.032Z",
+            "modified": "2024-03-02T05:18:59.528Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjYzNCwiZXhwIjoxNzA5MzY3NDM0fQ.2_5ivDXXboouGhB_M04i7JtAUuNn3dZ9IawMMwWQ-jw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "categoryName",
+                        "value": "Music"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Frank Ocean, Twice, Travis Scott and Don Toliver"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "41694508-312a-43c4-adac-397ac060f49f",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "61eb413f-3132-4f7a-806e-070878ff0c35",
+            "name": "updateCategory",
+            "url": "category/updateCategory/65e2b6c4b668b90bd6560bb9",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-02T04:56:35.033Z",
+            "modified": "2024-03-02T05:20:22.641Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjYzNCwiZXhwIjoxNzA5MzY3NDM0fQ.2_5ivDXXboouGhB_M04i7JtAUuNn3dZ9IawMMwWQ-jw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "KanyeWest, BLACK PINK, Joji"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "cc7f17cb-9295-4df9-8c34-8504ec96a151",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "61eb413f-3132-4f7a-806e-070878ff0c35",
+            "name": "deleteCategory",
+            "url": "category/deleteCategory/65e2b6c4b668b90bd6560bb9",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-02T04:56:35.035Z",
+            "modified": "2024-03-02T05:20:45.972Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjYzNCwiZXhwIjoxNzA5MzY3NDM0fQ.2_5ivDXXboouGhB_M04i7JtAUuNn3dZ9IawMMwWQ-jw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "63b24f8b-2a27-4050-adea-3f8f4c679be0",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "b44bfa39-9c22-41f5-baa6-34403f512ba6",
+            "name": "add Post",
+            "url": "publication/addPost",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-02T04:56:35.036Z",
+            "modified": "2024-03-02T17:21:22.287Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkyOTk5MTQsImV4cCI6MTcwOTMxMDcxNH0.iyFe1X-NO1SoDhcG9RzzJvlgbFkp3ZtdkyDQX--y22k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "The New Kanye West album"
+                    },
+                    {
+                        "name": "content",
+                        "value": "Vultures 1 "
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e2b55f27a482ef6f5a4d43"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "29a339c1-21b4-4016-9b6b-24932dd529f2",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "b44bfa39-9c22-41f5-baa6-34403f512ba6",
+            "name": "update Post",
+            "url": "publication/updatePost/",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-02T04:56:35.037Z",
+            "modified": "2024-03-02T17:21:49.832Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjYzNCwiZXhwIjoxNzA5MzY3NDM0fQ.2_5ivDXXboouGhB_M04i7JtAUuNn3dZ9IawMMwWQ-jw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "content",
+                        "value": "Vultures 1, Probably best album of the year?"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe4d11e4-1090-4443-a090-c4d7c7aa66ef",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "b44bfa39-9c22-41f5-baa6-34403f512ba6",
+            "name": "delete Post",
+            "url": "publication/deletePost/",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-02T04:56:35.038Z",
+            "modified": "2024-03-02T17:22:00.151Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjYzNCwiZXhwIjoxNzA5MzY3NDM0fQ.2_5ivDXXboouGhB_M04i7JtAUuNn3dZ9IawMMwWQ-jw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c7b4e45f-7d9c-4ad2-acda-12dc313b9ab1",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "4add4f25-a5f5-4df6-8037-671cd1be1e54",
+            "name": "addComment ",
+            "url": "comment/addComment",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-02T04:56:35.039Z",
+            "modified": "2024-03-02T04:56:35.039Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMTIzMjIsImV4cCI6MTcwOTMyMzEyMn0.apLsvYj1HGqKtbRN5Zvs0KxeSGRDT9zMhS6QvOMYBAY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65e1d8b82a111932abf1029c"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "Actualization of avatar serie"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "11421983-8570-41b9-abe8-fbc73a9a4978",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "4add4f25-a5f5-4df6-8037-671cd1be1e54",
+            "name": "updateComment",
+            "url": "comment/updateComment/65e12eb102d691b3c1bbb82c",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-03-02T04:56:35.040Z",
+            "modified": "2024-03-02T04:56:35.040Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwMGVhODIzYTdkZjQ3NWIxMjE3NjgiLCJ1c2VybmFtZSI6ImNhcmFsdCIsIm5hbWUiOiJDYXJsb3MiLCJpYXQiOjE3MDkzMDE0OTIsImV4cCI6MTcwOTMxMjI5Mn0.S2--mqKw7hT7p5AXtfX4W0v2tP3_uMIM-HajyoznipI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "The live action is the best"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a00d7bc9-99ed-4c0c-bfec-f316fbe60589",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "4add4f25-a5f5-4df6-8037-671cd1be1e54",
+            "name": "deleteComment",
+            "url": "comment/deleteComment/65e12eb102d691b3c1bbb82c",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2024-03-02T04:56:35.041Z",
+            "modified": "2024-03-02T04:56:35.041Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMDIzMTksImV4cCI6MTcwOTMxMzExOX0.ZtBLmaBk1qQZAhPgcNwmZeGsmYYvgBmwvnkH1ZgyEzk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4800c16b-11f6-44b9-b32d-179cedffe32b",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "4add4f25-a5f5-4df6-8037-671cd1be1e54",
+            "name": "getComments",
+            "url": "comment/getComments",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-02T04:56:35.042Z",
+            "modified": "2024-03-02T04:56:35.042Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMTIzMjIsImV4cCI6MTcwOTMyMzEyMn0.apLsvYj1HGqKtbRN5Zvs0KxeSGRDT9zMhS6QvOMYBAY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d6a89129-a0f5-469a-8d16-a5555650a8a5",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "61eb413f-3132-4f7a-806e-070878ff0c35",
+            "name": "getCategory",
+            "url": "category/getCategory",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-02T04:56:35.043Z",
+            "modified": "2024-03-02T05:21:05.949Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjYzNCwiZXhwIjoxNzA5MzY3NDM0fQ.2_5ivDXXboouGhB_M04i7JtAUuNn3dZ9IawMMwWQ-jw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16236893-27d1-4e05-8e41-298ef8e2b9c9",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "b44bfa39-9c22-41f5-baa6-34403f512ba6",
+            "name": "get Post",
+            "url": "publication/getPost",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-03-02T04:56:35.044Z",
+            "modified": "2024-03-02T17:22:07.650Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjYzNCwiZXhwIjoxNzA5MzY3NDM0fQ.2_5ivDXXboouGhB_M04i7JtAUuNn3dZ9IawMMwWQ-jw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1c4b828e-60eb-4961-840e-45606e23f888",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "88dc7a55-5ba9-4ede-99d8-f552a00ff7fa",
+            "name": "getUsers",
+            "url": "user/getUsers",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-02T04:56:35.045Z",
+            "modified": "2024-03-02T05:10:34.712Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjE1MiwiZXhwIjoxNzA5MzY2OTUyfQ.pX9XLdFcLk4ckRqny515hFJgr6SZ8y92-wLXDmljtI8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a0a46d01-578b-4112-8326-fff0e42e810c",
+            "colId": "3fa28530-d491-4160-b86d-a2a8a2edd2c2",
+            "containerId": "88dc7a55-5ba9-4ede-99d8-f552a00ff7fa",
+            "name": "updatePassword",
+            "url": "user/updatePassword",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-03-02T04:56:35.046Z",
+            "modified": "2024-03-02T05:11:10.524Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYjQ1YTE2YzA2OGU0YzNhODM2YTEiLCJ1c2VybmFtZSI6ImdhdG8iLCJuYW1lIjoiRWR1YXJkbyIsImlhdCI6MTcwOTM1NjE1MiwiZXhwIjoxNzA5MzY2OTUyfQ.pX9XLdFcLk4ckRqny515hFJgr6SZ8y92-wLXDmljtI8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "11111"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656/"
+        }
+    }
+}
